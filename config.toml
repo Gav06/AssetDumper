@@ -1,0 +1,10 @@
+# this is the default config
+
+# replace YOURUSERNAME with your username obviously
+minecraft-folder="C:/Users/YOURUSERNAME/AppData/Roaming/.minecraft"
+
+# version.json file name for the minecraft version we want
+version-json="1.12.2"
+
+# relative dir path for output
+output-dir="/output"
