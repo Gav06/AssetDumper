@@ -6,5 +6,5 @@ minecraft-folder="C:/Users/YOURUSERNAME/AppData/Roaming/.minecraft"
 # version.json file name for the minecraft version we want
 version="1.12.2"
 
-# relative dir path for output
+# dir path for output
 output-dir="/output"
