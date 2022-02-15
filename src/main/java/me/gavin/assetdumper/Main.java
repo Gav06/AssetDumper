@@ -12,6 +12,7 @@ public class Main {
         } catch (FileNotFoundException e) {
             System.err.println("Unable to find " + e.getMessage());
             if (e.getMessage().equals("config.toml")) {
+                System.out.println("Download the default config? (y/n)");
                 String in = new Scanner(System.in).nextLine();
                 if (in.equalsIgnoreCase("y")) {
                     downloadDefaultConfig();
