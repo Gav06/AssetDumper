@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+}
+
+group 'me.gavin'
+version '1.0-SNAPSHOT'
+
+configurations {
+    shade
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // gson for working with asset indexes and version jsons
+    shade 'com.google.code.gson:gson:2.9.0'
+
+    // toml for config
+    shade 'com.moandjiezana.toml:toml4j:0.7.2'
+
+    implementation configurations.shade
+}
+
+jar {
+
+    manifest.attributes(
+            "Main-Class": "me.gavin.assetdumper.Main"
+    )
+
+    from {
+        configurations.shade.collect {
+            exclude "LICENSE.txt"
+            exclude "dummyThing"
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+}
