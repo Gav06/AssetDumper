@@ -7,4 +7,4 @@ minecraft-folder="C:/Users/YOURUSERNAME/AppData/Roaming/.minecraft"
 version="1.12.2"
 
 # dir path for output
-output-dir="/output"
+output-dir="C:/Users/%username%/Desktop/Output"
