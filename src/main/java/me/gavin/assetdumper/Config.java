@@ -12,10 +12,12 @@ public class Config {
 
     public Config() throws FileNotFoundException {
         configFile = new File("config.toml");
-        toml = new Toml().read(configFile);
 
         if (!configFile.exists())
-            throw new FileNotFoundException();
+            throw new FileNotFoundException("config.toml");
+
+        toml = new Toml().read(configFile);
+
     }
 
     public File getConfigFile() {
