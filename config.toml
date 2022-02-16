@@ -1,10 +1,9 @@
 # this is the default config
 
-# replace YOURUSERNAME with your username obviously
-minecraft-folder="C:/Users/%username%/AppData/Roaming/.minecraft"
+# %username% will be replaced with your system username by default
 
+minecraft-folder="C:/Users/%username%/AppData/Roaming/.minecraft"
 # version.json file name for the minecraft version we want
 version="1.12.2"
-
 # dir path for output
 output-dir="C:/Users/%username%/Desktop/Output"
